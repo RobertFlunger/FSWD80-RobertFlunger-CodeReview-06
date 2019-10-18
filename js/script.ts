@@ -17,8 +17,9 @@ class Locations {
 	}
 
 	display() {
-		return `<div class="col-sm-12 col-md-6 col-lg-3 p-2">
+		return `<div class="col-sm-12 col-md-6 col-lg-3 p-2 card-outer">
 					<div class="card w-100">
+						<div class="card-header bg-primary"><h4 class="text-white">Place</h4></div>
 						<img src="${this.img}" alt="Image of ${this.address}" class=" img-fluid w-100">
 						<div class="card-body">
 							<h5 class="card-title">${this.locationname}</h5>
@@ -49,6 +50,7 @@ class Restaurant extends Locations {
 	display() {
 		return `<div class="col-sm-12 col-md-6 col-lg-3 p-2">
 					<div class="card w-100">
+						<div class="card-header bg-success"><h4 class="text-white">Restaurant</h4></div>
 						<img src="${this.img}" alt="Image of ${this.address}" class="img-fluid w-100">
 						<div class="card-body">
 							<h5 class="card-title">${this.locationname}</h5>
@@ -85,6 +87,7 @@ class Events extends Locations {
 	display() {
 		return `<div class="col-sm-12 col-md-6 col-lg-3 p-2">
 					<div class="card w-100">
+						<div class="card-header bg-danger"><h4 class="text-white">Concert</h4></div>
 						<img src="${this.img}" alt="Image of ${this.address}" class="img-fluid w-100">
 						<div class="card-body">
 							<h5 class="card-title">${this.locationname}</h5>

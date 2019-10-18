@@ -9,28 +9,31 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <style> 
-    	
-    	.card img {
-    		object-fit: cover;
-    		height:  40vh;
-    	}
-		
-		
-
-		@media (max-width: 768px) {
-			.card img {
-				display: none;
-			}
-			.card {
-				text-align: center;
-			}
-		}
-
-    </style>
+<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body>
+<nav class="navbar navbar-dark bg-dark navbar-expand">
+    <ul class="navbar-nav">
+        <li class="nav-item mr-3">
+            <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item mr-3">
+            <a class="nav-link text-white active" href="index-asc.html">Sort (ascending)</a>
+        </li>   
+        <li class="nav-item mr-3">
+            <a class="nav-link text-white" href="index-desc.html">Sort (descending)</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="jumbotron text-center">
+    <h1 class="display-1">Welcome to Travel-O-Matic!</h1>
+    <h2 class="display-4">The BEST travel blog on the Internet.</h2>
+    <h4 class="display-4">We swear.</h4>
+</div>
+
+<h1 class="text-primary ml-3">Our handpicked suggestions from Vienna</h1>
     <div class="container-fluid">
         <div class="row" id="card-deck-asc">
             
